@@ -10,88 +10,125 @@
     <link rel="stylesheet" href="challenge.css">
   </head>
   <body>
-    <!--     
-    Checkout
-    
-    3 items
-    
-    iPhone 12 Pro
-    
-    Golden
-    
-    $999.00
-    
-    x 1
-    
-    Apple Watch
-    
-    Blue
-    
-    $399.00
-    
-    iMac
-    
-    Green
-    
-    $1199.00
-    
-    Enter coupon code
-    
-    Apply Coupon
-    
-    Sub total
-    
-    $2597.00
-    
-    Tax
-    
-    $623.28
-    
-    Total
-    
-    $3220.28
-    
-    Contact Information
-    
-    First & Last name
-    
-    Enter first & last name
-    
-    Email Address
-    
-    Enter email address
-    
-    Country
-    
-    Finland
-    
-    Postal Code
-    
-    00270
-    
-    Continue
-     -->
-
-    
-
     <!-- header section start here -->
     <header>
-      <nav class="navbar-section">
-
-      </nav>
+      <nav class="navbar-section">  
     </header>
     <!-- header section ends here -->
 
     <!-- main section start here -->
     <main>
+      <section class="card-section">
+        <div class="card">
+          <div class="card-items">
+            <div class="sub-card-1">
+             <div class="product-item flex">
+                <div class="product-items flex">
+                 <img class="product-img" src="resources/Gold.png" alt="iphone-12">
+                 <div class="product-details">
+                  <p class="product-name">iPhone</p>
+                  <p class="product-color-name">Golden</p>
+                  <p class="product-available">x 1</p>
+                 </div>
+                </div>
+                <div class="product-buy-details">
+                 <h3 class="product-price">$999.00</h3>
+                 <p class="product-cancel">X</p>
+                </div>
+             </div>
+            </div>
+            <div class="sub-card-1">
+             <div class="product-item flex">
+                <div class="product-items flex">
+                 <img class="product-img" src="resources/Apple-watch.png" alt="Apple-watch">
+                 <div class="product-details">
+                  <p class="product-name">Watch</p>
+                  <p class="product-color-name blue">Blue</p>
+                  <p class="product-available">x 1</p>
+                 </div>
+                </div>
+                <div class="product-buy-details">
+                 <h3 class="product-price">$399.00</h3>
+                 <p class="product-cancel">X</p>
+                </div>
+             </div>
+            </div>
+            <div class="sub-card-1">
+             <div class="product-item flex">
+                <div class="product-items flex">
+                 <img class="product-img" src="resources/iMac.png" alt="iMac" id="imac-img">
+                 <div class="product-details">
+                  <p class="product-name">iMac</p>
+                  <p class="product-color-name">Green</p>
+                  <p class="product-available">x 1</p>
+                 </div>
+                </div>
+                <div class="product-buy-details">
+                 <h3 class="product-price">$1190.00</h3>
+                 <p class="product-cancel">X</p>
+                </div>
+             </div>
+            </div>
 
+            <hr>
+
+            <div class="sub-card-2">
+              <div class="coupon-area flex">
+                <input class="coupon-in" type="text" name="coupon" id="coupon" placeholder="Enter coupon code">
+                <input class="coupon-btn" type="button" name="coupon" value="Apply Coupon">
+              </div>
+
+              <div class="coupon-details text-bold flex">
+                <div class="coupon-title ">
+                  <p class="sub-total text margin">Sub total</p>
+                  <p class="tax text margin">Tax</p>
+                  <p class="total">Total</p>
+                </div>
+
+                <div class="amount-details">
+                  <p class="sub-total-amount text margin">$2597.00</p>
+                  <p class="tax-amount text margin">$623.28</p>
+                  <p class="total-amount">$3320.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-items-2" id="card-bg">
+            <h3 class="card-2-title margin-1">Contact Information</h3>
+
+            <form class="card-2-form " action="">
+              <label for="name">First & Last name <br>
+                <input class="input-1" type="text" name="name" placeholder="Enter first & Last name">
+              </label> <br> 
+
+              <label for="email">Enter address <br>
+                <input class="input-2" type="email" name="email" id="" placeholder="Enter email address">
+              </label>
+             <div class="country-postal-code flex">
+               <label for="country">Country <br><br> 
+                <select name="country" id="country">
+                  <option value="Finland">Finland</option>
+                </select>
+              </label>
+
+              <label for="postal-code">postal code
+                <input class="input-3" type="text" name="postal-code" id="postal-code" placeholder="00270">
+              </label>
+             </div>
+             
+              <input class="input-btn-2" type="submit" value="Continue">
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- main section ends here -->
 
     <!-- footer section start here -->
     <footer>
       <div class="author-info">
-        Coded by <a href="#">Jony-shagor</a> | Challenge by
+        Coded by <a href="https://github.com/hsagor703/device-shop-checkout-master" target="_blank">Jony-shagor</a> | Challenge by
         <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
     </div>
     </footer>
