@@ -3,37 +3,26 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
 }
 
 body {
         height: 100vh;
     }
-
-.author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-    }
-
-.author-info a {
-        text-decoration: none;
-    }
-
     .flex{
         display: flex;
     }
-
     .text{
         color: rgb(102, 101, 101);
     }
-
     .text-bold{
         font-weight: bold;
     }
-
     .margin{
         margin-bottom: 10px;
+    }
+    .margin-2{
+        margin-top: 5px;
     }
     .margin-1{
         margin-bottom: 20px;
@@ -210,7 +199,95 @@ body {
     padding: 15px;
     border-radius: 8px;
     border: none;
+    margin-top:45px;
 }
 
 /* contact information  */
+
+/* footer section start here  */
+.author-info {
+        max-width: 1275px;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        color: rgb(55, 65, 81);
+    }
+
+.author-info a {
+        text-decoration: none;
+    }
+/* footer section ends here  */
   
+
+/* media section  */
+
+/* small screen  */
+@media screen and (max-width: 576px) {
+    .navbar-section{
+        width: 545px;
+    }
+    .card{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        margin: 10px;
+    }
+    .card-items{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .body{
+        width: 100%;
+    }
+    .card-items-2{
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+    .card-2-title{
+        margin-top: 30px;
+    }
+     .country-postal-code select{
+    width: 35vh;
+    }
+    .country-postal-code input{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    .author-info{
+        margin-right: -170px;
+    }
+
+}
+
+/* tablet screen */
+@media screen and (min-width: 576px) and (max-width:992px) {
+     .navbar-section{
+        width: 1069px;
+    }
+    .card{ 
+        margin: 30px;
+    }
+    .card-items{
+        width: 100%;
+    }
+    .card-items-2{
+        padding: 20px;
+        margin-right: -300px;
+    }
+     footer{
+        text-align: center;
+    }
+    .author-info{
+        margin-right: -300px;
+    }
+    .country-postal-code select{
+    width: 20vh;
+    }
+    .country-postal-code input{
+        width: 100%;
+    }
+}
+
+/* media section  */
